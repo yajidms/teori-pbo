@@ -11,7 +11,7 @@ public class LayananPeminjaman {
     tampilan.tampilkanHeader();
 
     String namaPeminjam = tampilan.mintaInputString("Masukkan Nama Peminjam : ");
-    String namaBarangStr = tampilan.mintaInputString("Masukkan Nama Barang   : "); // Dapat input sbg String
+    String namaBarangStr = tampilan.mintaInputString("Masukkan Nama Barang   : ");
     Date tglPinjam = tampilan.mintaInputTanggal("Tanggal Pinjam (YYYY-MM-DD): ");
 
     // objek nama barang dari input String
