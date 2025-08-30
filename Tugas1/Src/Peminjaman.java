@@ -3,7 +3,7 @@ import java.util.Date;
 public class Peminjaman {
 
   private String idPeminjaman;
-  private NamaBarang barang; // Tipe data diubah dari String ke NamaBarang
+  private NamaBarang barang;
   private String namaPeminjam;
   private Date tanggalPinjam;
   private Date tanggalKembali;
@@ -11,7 +11,7 @@ public class Peminjaman {
 
   public Peminjaman(String id, NamaBarang barang, String peminjam, Date tglPinjam) {
     this.idPeminjaman = id;
-    this.barang = barang; // Disimpan sebagai objek
+    this.barang = barang;
     this.namaPeminjam = peminjam;
     this.tanggalPinjam = tglPinjam;
     this.status = "Dipinjam";
@@ -19,7 +19,7 @@ public class Peminjaman {
   }
 
   public String getIdPeminjaman() { return idPeminjaman; }
-  public NamaBarang getBarang() { return barang; } // Getter mengembalikan objek NamaBarang
+  public NamaBarang getBarang() { return barang; }
   public String getNamaPeminjam() { return namaPeminjam; }
   public Date getTanggalPinjam() { return tanggalPinjam; }
   public Date getTanggalKembali() { return tanggalKembali; }
