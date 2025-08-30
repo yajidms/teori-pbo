@@ -1,4 +1,4 @@
-# Pemrograman Beroriantasi Objek Teori
+# Pemrograman Berorientasi Objek Teori
 Untuk Pengumpulan Beberapa Tugas PBO Teori
 
 ## Pengenalan Diri
