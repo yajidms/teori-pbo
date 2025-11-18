@@ -15,5 +15,5 @@ mvn clean compile
 ```
 - Run Program
 ```
-mvn exec:java -Dexec.mainClass="com.codeway.daoTemplate.sample.UserDaoImpl"
+mvn --% exec:java -Dexec.mainClass="com.codeway.daoTemplate.sample.UserDaoImpl"
 ```
