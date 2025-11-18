@@ -1,0 +1,47 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.2">
+  <diagram name="Class Diagram" id="employee-diagram">
+    <mxGraphModel dx="810" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dept" value="Department &#xa;- name: String | &#xa;- getName(): String; &#xa;- setName(String)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;resizeParent=1;startSize=190;" parent="1" vertex="1">
+          <mxGeometry x="950" y="480" width="170" height="100" as="geometry">
+            <mxRectangle x="180" y="130" width="400" height="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="etype" value="EmploymentType&#xa;- type: String &#xa; - getType(): String; &#xa;- setType(String)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;resizeParent=1;startSize=150;" parent="1" vertex="1">
+          <mxGeometry x="290" y="480" width="200" height="100" as="geometry">
+            <mxRectangle x="40" y="360" width="410" height="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="emp" value="Employee &#xa;- id: int; &#xa;- name: String; &#xa;- salary: double; &#xa;- department: Department; &#xa;- type: EmploymentType &#xa;- getId(); &#xa;- setId(int); &#xa;- getName(); &#xa;- setName(String); &#xa;- getSalary(); &#xa;- setSalary(double)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;resizeParent=1;startSize=180;" parent="1" vertex="1">
+          <mxGeometry x="590" y="440" width="260" height="180" as="geometry">
+            <mxRectangle x="590" y="440" width="1070" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service" value="EmployeeService&#xa;- employees: Map&lt;Integer,Employee&gt; | &#xa;- addEmployee(Employee); &#xa;- getEmployee(int): Employee; &#xa;- raiseSalary(int,double)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;resizeParent=1;startSize=140;" parent="1" vertex="1">
+          <mxGeometry x="605" y="180" width="230" height="140" as="geometry">
+            <mxRectangle x="570" y="180" width="800" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="app" value="App&#xa;- main(String[] args)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;resizeParent=1;startSize=80;" parent="1" vertex="1">
+          <mxGeometry x="380" y="210" width="160" height="80" as="geometry">
+            <mxRectangle x="450" y="20" width="180" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1" style="endArrow=diamondThin;endFill=1;" parent="1" source="emp" target="dept" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" style="endArrow=diamondThin;endFill=1;" parent="1" source="emp" target="etype" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" style="endArrow=block;" parent="1" source="service" target="emp" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" style="endArrow=open;" parent="1" source="app" target="service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
